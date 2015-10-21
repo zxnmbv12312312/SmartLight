@@ -1,0 +1,135 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jackgu.light.fragment.InfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.example.jackgu.light.view.TitleView
+        android:id="@+id/info_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout android:id="@+id/list_info"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border">
+            <TextView
+                android:id="@+id/about_us_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_about_us"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arraw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border">
+            <TextView
+                android:id="@+id/share_like_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_share_like"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arraw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border">
+            <TextView
+                android:id="@+id/share_facebook_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_share_facebook"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arraw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border">
+            <TextView
+                android:id="@+id/help_us_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_help_us"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arraw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border">
+            <TextView
+                android:id="@+id/comment_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_comment"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arraw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/detail_fragment"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+
+</LinearLayout>

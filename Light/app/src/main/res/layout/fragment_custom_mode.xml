@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jackgu.light.fragment.CustomModeFragment">
+
+    <com.example.jackgu.light.view.TitleView
+        android:id="@+id/custom_mode_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1"
+            android:id="@+id/last_favor_id"
+            android:visibility="invisible"/>
+        <ImageButton
+            android:id="@+id/imageFavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_transparent"
+            android:src="@drawable/favor_btn_off"
+            android:tag="favor_btn_off"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_color1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            app:border_width="2dp"
+            app:border_color="@color/grey_400"
+            android:src="@color/c08_pick"
+            android:tag="c08_pick"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_color2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            app:border_width="2dp"
+            android:src="@color/c03_pick"
+            android:tag="c03_pick"
+            app:border_color="@color/grey_400"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_color3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            app:border_width="2dp"
+            android:src="@color/c06_pick"
+            android:tag="c06_pick"
+            app:border_color="@color/grey_400"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/grey_600"
+        android:layout_marginBottom="10dp">
+
+        <com.example.jackgu.light.wheel.WheelView
+            android:id="@+id/color_vertical_wheel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"/>
+
+        <com.example.jackgu.light.wheel.WheelView
+            android:id="@+id/color_vertical_wheel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <com.example.jackgu.light.wheel.WheelView
+            android:id="@+id/color_vertical_wheel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/grey_600">
+
+        <com.example.jackgu.light.wheel.WheelView
+            android:id="@+id/time_vertical_wheel1"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+
+        <com.example.jackgu.light.wheel.WheelView
+            android:id="@+id/time_vertical_wheel2"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <com.example.jackgu.light.wheel.WheelView
+            android:id="@+id/time_vertical_wheel3"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

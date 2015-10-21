@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey_0"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/grey_0"
+        android:orientation="vertical"
+        android:layout_above="@+id/indicator">
+
+        <fragment
+            android:id="@+id/fragment_home"
+            class="com.example.jackgu.light.fragment.HomeFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_favorites"
+            class="com.example.jackgu.light.fragment.FavoritesFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_settings"
+            class="com.example.jackgu.light.fragment.SettingsFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_info"
+            class="com.example.jackgu.light.fragment.InfoFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_main"
+            class="com.example.jackgu.light.fragment.MainFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_custom_mode"
+            class="com.example.jackgu.light.fragment.CustomModeFragment"
+            android:tag="CustomModeFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+        <fragment
+            android:id="@+id/fragment_hopping_mode"
+            class="com.example.jackgu.light.fragment.HoppingModeFragment"
+            android:tag="HoppingModeFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_fire_cracker_mode"
+            class="com.example.jackgu.light.fragment.FireCrackerModeFragment"
+            android:tag="FireCrackerModeFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_gradual_change_mode"
+            class="com.example.jackgu.light.fragment.GradualChangeFragment"
+            android:tag="GradualChangeFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_monochrome_mode"
+            class="com.example.jackgu.light.fragment.MonochromeModeFragment"
+            android:tag="MonochromeModeFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_lighting_mode"
+            class="com.example.jackgu.light.fragment.LightingModeFragment"
+            android:tag="LightingModeFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_clock"
+            class="com.example.jackgu.light.fragment.AlarmClockFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_transparent"
+        android:src="@drawable/home_btn"
+        android:layout_weight="1"
+        android:layout_above="@+id/indicator"
+        android:layout_centerHorizontal="true"/>
+
+    <com.example.jackgu.light.fragment.FragmentIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_footer_bg"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

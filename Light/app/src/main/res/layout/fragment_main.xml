@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jackgu.light.fragment.MainFragment"
+    android:id="@+id/fragment_main_panel"
+    >
+    <com.example.jackgu.light.view.TitleView
+        android:id="@+id/main_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_title"
+        android:id="@+id/favor_btn_panel">
+
+        <ImageButton
+            android:id="@+id/colorFavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_transparent"
+            android:src="@drawable/favor_btn_off"
+            android:tag="favor_btn_off"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"/>
+        <ImageButton
+            android:id="@+id/modeFavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_transparent"
+            android:src="@drawable/favor_btn_off"
+            android:tag="favor_btn_off"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:layout_above="@+id/wheelview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/red_point"/>
+
+
+
+    <com.lukedeighton.wheelview.WheelView
+            android:id="@+id/wheelview"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:emptyItemColor="@color/green_900"
+            app:rotatableWheelDrawable="true"
+            app:selectionAngle="90.0"
+            app:selectionColor="@color/teal_900"
+            app:selectionPadding="0dp"
+            app:repeatItems="true"
+            app:wheelRadius="150dp"
+            app:wheelItemCount="36"
+            app:wheelPadding="13dp"
+            app:wheelItemRadius="6dp"
+            app:wheelDrawable = "@drawable/colorwheel_bg"
+            android:layout_centerInParent="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/shadow_view"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/red_point"/>
+    <com.lukedeighton.wheelview.WheelView
+        android:id="@+id/shadow_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:emptyItemColor="@color/green_900"
+        app:wheelColor="@color/grey_400"
+        app:rotatableWheelDrawable="true"
+        app:selectionAngle="90.0"
+        app:selectionColor="@color/teal_900"
+        app:selectionPadding="4dp"
+        app:repeatItems="true"
+        app:wheelRadius="100dp"
+        app:wheelItemCount="18"
+        app:wheelPadding="13dp"
+        app:wheelItemRadius="10dp"
+        app:wheelDrawable = "@drawable/shadowwheel_bg"
+        android:layout_centerInParent="true" />
+
+    <com.lukedeighton.wheelview.WheelView
+        android:id="@+id/mode_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:emptyItemColor="@color/grey_0"
+        app:wheelColor="@color/grey_400"
+        app:rotatableWheelDrawable="false"
+        app:selectionAngle="90.0"
+        app:selectionPadding="0dp"
+        app:repeatItems="true"
+        app:wheelRadius="150dp"
+        app:wheelItemCount="6"
+        app:wheelPadding="20dp"
+        app:wheelItemRadius="25dp"
+        app:wheelDrawable="@drawable/modewheel_bg"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerButton"
+        android:layout_centerInParent="true"
+        android:src="@drawable/swith_off"
+        android:tag="swith_off"
+        android:background="@color/color_transparent"/>
+    <ImageButton
+        android:layout_width="129.5dp"
+        android:layout_height="135.3dp"
+        android:id="@+id/pieButton1"
+        android:background="@drawable/pie_menu_1_normal"
+        android:layout_alignBottom="@+id/wheelview"
+        android:layout_alignLeft="@+id/wheelview" />
+    <ImageButton
+        android:layout_width="128.4dp"
+        android:layout_height="130.5dp"
+        android:id="@+id/pieButton3"
+        android:background="@drawable/pie_menu_3_normal"
+        android:layout_alignBottom="@+id/wheelview"
+        android:layout_alignRight="@+id/wheelview" />
+    <ImageButton
+        android:layout_width="123.6dp"
+        android:layout_height="103.7dp"
+        android:id="@+id/pieButton2"
+        android:background="@drawable/pie_menu_2_normal"
+        android:layout_alignBottom="@+id/wheelview"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_page_edit"
+        android:id="@+id/edit_button"
+        android:layout_below="@+id/wheelview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

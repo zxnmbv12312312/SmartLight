@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="seconds_1">0.5</string>
+    <string name="seconds_2">1</string>
+    <string name="seconds_3">2</string>
+    <string name="seconds_4">3</string>
+    <string name="seconds_5">4</string>
+    <string name="seconds_6">5</string>
+    <string name="seconds_7">6</string>
+    <string name="seconds_8">7</string>
+    <string name="seconds_9">8</string>
+    <string name="seconds_10">9</string>
+    <string name="seconds_11">10</string>
+</resources>
